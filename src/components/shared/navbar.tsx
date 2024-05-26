@@ -10,6 +10,7 @@ import {
   NavigationMenu,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Navbar() {
   return (
@@ -117,7 +118,8 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div className="ml-auto w-[150px]">
+      <div className="flex items-center gap-1">
+        <ModeToggle />
         <Button variant="outline">Sign in</Button>
       </div>
     </header>

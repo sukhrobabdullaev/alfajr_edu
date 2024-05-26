@@ -1,25 +1,18 @@
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PlayIcon } from "@radix-ui/react-icons";
 
 export default function Main() {
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white dark:bg-background">
       <div className="container mx-auto flex flex-col lg:flex-row items-center py-12 lg:py-24">
         <div className="flex-1">
           <div className="max-w-md">
             <p className="text-sm font-semibold uppercase tracking-wide text-green-600">
               Start learning for free
             </p>
-            <h1 className="mt-2 text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+            <h1 className="mt-2 text-4xl font-extrabold leading-tight dark:text-white text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
               Build Data Skills Online
             </h1>
             <p className="mt-4 text-lg text-gray-500">
